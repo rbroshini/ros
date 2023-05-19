@@ -33,10 +33,20 @@ touch ros.txt
 touch book.txt 
 touch tin.txt
 ls 
-for i in {1..4}; do mv -name "*.txt" \ file$i.txt; done;
-mv ${cwd}/${folder}'/data/*' ${cwd}/${folder}
-for i in ls; mv i/ file$j.txt | j in {1..10}
+#for i in {1..4}; do mv -name "*.txt" \ file$i.txt; done;
+#mv ${cwd}/${folder}'/data/*' ${cwd}/${folder}
+#for i in *.txt;do mv -v -- "$i" "${i%.txt}.txt/ file$j.txt | j in {1..10}
+
+n= ls /etc | wc -l
+i=0
+while(i<n):
+     mv -v -- *.txt  "file$j.txt";
+     i+=1
+
+
+
 
 #2.
-for x in *.txt; do rm -r x;done 
+find ros -type f -name '*.txt' -print -delete
+
 ls
